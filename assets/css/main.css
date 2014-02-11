@@ -8,7 +8,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     /*font-family: Raleway;*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -37,12 +42,12 @@ a {
     -o-transition: color .1s ease-in, background .1s ease-in;
     transition: color .1s ease-in, background .1s ease-in;
 }
-a:hover, a:focus {
+a: hover, a: focus {
     color: #7b7b7b;
     text-decoration: none;
     outline: 0;
 }
-a:before, a:after {
+a: before, a: after {
     -webkit-transition: color .1s ease-in, background .1s ease-in;
     -moz-transition: color .1s ease-in, background .1s ease-in;
     -ms-transition: color .1s ease-in, background .1s ease-in;
@@ -66,13 +71,12 @@ hr {
     border-color: #005acb;
     font-weight: 300;
 }
-.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active, .open .dropdown-toggle.btn-green {
+.btn-green: hover, .btn-green: focus, .btn-green: active, .btn-green.active, .open .dropdown-toggle.btn-green {
     color: #fff;
     background-color: #002c6a;
     border-color: #002c6a;
     font-weight: 300;
 }
-
 .tm {
     font-size: 14px;
     line-height: 20px;
@@ -95,7 +99,8 @@ hr {
     left: 60px;
     background: #1a1a1a;
     width: 200px;
-    height: 100%}
+    height: 100%
+}
 .menu h1.logo a {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -106,7 +111,7 @@ hr {
     color: #fff;
     margin-top: 20px;
 }
-.menu h1.logo a:hover {
+.menu h1.logo a: hover {
     color: #005acb;
 }
 .menu img.logo {
@@ -123,10 +128,10 @@ hr {
     letter-spacing: .1em;
     text-transform: uppercase;
 }
-.menu a:hover {
+.menu a: hover {
     color: #fff;
 }
-.menu a:active {
+.menu a: active {
     color: #fff;
 }
 .menu a>i {
@@ -156,7 +161,7 @@ hr {
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
-.menu-close:hover {
+.menu-close: hover {
     color: #fff;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
@@ -175,7 +180,8 @@ hr {
 .body-push-toleft {
     left: -200px;
 }
-.menu, .body-push {
+.menu,
+.body-push {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
@@ -202,7 +208,7 @@ hr {
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
-#menuToggle:hover {
+#menuToggle: hover {
     color: #fff;
     background: rgba(0, 0, 0, .2);
     -webkit-transition: all .1s ease-in-out;
@@ -355,7 +361,8 @@ hr {
     background-size: cover;
 }
 #portfolio {
-    width: 100%}
+    width: 100%
+}
 #services {
     background: #005acb;
     margin-top: 25px;
@@ -396,9 +403,11 @@ hr {
 }
 #sf {
     display: block;
-    width: 100%}
+    width: 100%
+}
 #sf .container {
-    width: 100%}
+    width: 100%
+}
 #sf .col-lg-4 {
     margin: 0;
     padding: 15px;
@@ -440,7 +449,8 @@ hr {
     margin-left: 15px;
 }
 #cf .container {
-    width: 100%}
+    width: 100%
+}
 #cf .col-lg-8 {
     margin: 0;
     padding: 0;
@@ -458,14 +468,18 @@ hr {
     width: 100%;
     opacity: 0;
 }
-.process li.shown, .no-js .process li, .no-cssanimations .process li {
+.process li.shown,
+.no-js .process li,
+.no-cssanimations .process li {
     opacity: 1;
 }
-.process li a, .process li img {
+.process li a,
+.process li img {
     outline: 0;
     border: 0;
     display: block;
-    max-width: 100%}
+    max-width: 100%
+}
 .process.effect-2 li.animate {
     -webkit-transform: translateY(200px);
     -moz-transform: translateY(200px);
@@ -476,26 +490,31 @@ hr {
 }
 @-webkit-keyframes moveUp {
     to {
-    -webkit-transform: translateY(0);
-    opacity: 1;
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-}@-moz-keyframes moveUp {
+@-moz-keyframes moveUp {
     to {
-    -moz-transform: translateY(0);
-    opacity: 1;
+        -moz-transform: translateY(0);
+        opacity: 1;
+    }
 }
-}@keyframes moveUp {
+@keyframes moveUp {
     to {
-    transform: translateY(0);
-    opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-}#chartwrap {
-    width: 100%}
+#chartwrap {
+    width: 100%
+}
 #chartwrap .container {
     margin-left: 0;
     padding-left: 0;
 }
-#chartwrap h1, #chartwrap p {
+#chartwrap h1,
+#chartwrap p {
     margin-left: 10px;
 }
 .cardinfo {
@@ -521,18 +540,22 @@ hr {
     width: 33%;
     opacity: 0;
 }
-.grid li.shown, .no-js .grid li, .no-cssanimations .grid li {
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
     opacity: 1;
 }
-.grid li a, .grid li img {
+.grid li a,
+.grid li img {
     outline: 0;
     border: 0;
     display: block;
-    max-width: 100%}
+    max-width: 100%
+}
 .grid img {
     opacity: .7;
 }
-.grid img:hover {
+.grid img: hover {
     opacity: 1;
 }
 .grid.effect-2 li.animate {
@@ -545,17 +568,135 @@ hr {
 }
 @-webkit-keyframes moveUp {
     to {
-    -webkit-transform: translateY(0);
-    opacity: 1;
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
 }
-}@-moz-keyframes moveUp {
+@-moz-keyframes moveUp {
     to {
-    -moz-transform: translateY(0);
-    opacity: 1;
+        -moz-transform: translateY(0);
+        opacity: 1;
+    }
 }
-}@keyframes moveUp {
+@keyframes moveUp {
     to {
-    transform: translateY(0);
-    opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
+#headerwrap > .container > .row {
+    margin-top: 200px;
 }
+/* FIXED ANIMATED HEADER*/
+
+.cbp-af-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    height: 230px;
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.cbp-af-header .cbp-af-inner {
+    width: 90%;
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 0 1.875em;
+}
+.cbp-af-header h1,
+.cbp-af-header nav {
+    display: inline-block;
+    position: relative;
+}
+/* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+
+.cbp-af-header h1,
+.cbp-af-header nav a {
+    line-height: 230px;
+}
+.cbp-af-header h1 {
+    text-transform: uppercase;
+    color: orange;
+    letter-spacing: 4px;
+    font-size: 4em;
+    margin: 0;
+    float: left;
+}
+.cbp-af-header nav {
+    float: right;
+}
+.cbp-af-header nav a {
+    color: orange;
+    margin: 0 0 0 20px;
+    font-size: 1.4em;
+    text-decoration:none;
+}
+.cbp-af-header nav a:hover {
+    color: #FFF;
+    
+}
+
+/* Transitions and class for reduced height */
+
+.cbp-af-header h1,
+.cbp-af-header nav a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    height: 90px;
+    background: #002c6a;
+}
+.cbp-af-header.cbp-af-header-shrink h1,
+.cbp-af-header.cbp-af-header-shrink nav a {
+    line-height: 90px;
+}
+.cbp-af-header.cbp-af-header-shrink h1 {
+    font-size: 2em;
+}
+/* Example Media Queries */
+
+@media screen and (max-width: 55em) {
+    .cbp-af-header .cbp-af-inner {
+        width: 100%;
+    }
+    .cbp-af-header h1,
+    .cbp-af-header nav {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
+    .cbp-af-header h1,
+    .cbp-af-header nav a {
+        line-height: 115px;
+    }
+    .cbp-af-header nav a {
+        margin: 0 10px;
+    }
+    .cbp-af-header.cbp-af-header-shrink h1,
+    .cbp-af-header.cbp-af-header-shrink nav a {
+        line-height: 45px;
+    }
+    .cbp-af-header.cbp-af-header-shrink h1 {
+        font-size: 2em;
+    }
+    .cbp-af-header.cbp-af-header-shrink nav a {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 32.25em) {
+    .cbp-af-header nav a {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 24em) {
+    .cbp-af-header nav a, .cbp-af-header.cbp-af-header-shrink nav a {
+        line-height: 1;
+    }
+    /*END FIXED ANIMATED HEADER*/
