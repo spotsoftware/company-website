@@ -1,4 +1,4 @@
-;
+
 (function () {
 
     // Menu settings
@@ -8,41 +8,4 @@
         $('#theMenu').toggleClass('menu-open');
     });
 
-
-    //Header Animated
-    var cbpAnimatedHeader = (function () {
-
-        var docElem = document.documentElement,
-            header = document.querySelector('.cbp-af-header'),
-            didScroll = false,
-            changeHeaderOn = 50;
-
-        function init() {
-            window.addEventListener('scroll', function (event) {
-                if (!didScroll) {
-                    didScroll = true;
-                    scrollPage();
-                }
-            }, false);
-        }
-
-        function scrollPage() {
-            var sy = scrollY();
-            if (sy >= changeHeaderOn) {
-                classie.add(header, 'cbp-af-header-shrink');
-            } else {
-                classie.remove(header, 'cbp-af-header-shrink');
-            }
-            didScroll = false;
-        }
-
-        function scrollY() {
-            return window.pageYOffset || docElem.scrollTop;
-        }
-
-        init();
-
-    })();
-
-
-})(jQuery)
+})(jQuery);
