@@ -15,13 +15,13 @@
         var docElem = document.documentElement,
             header = document.querySelector('.cbp-af-header'),
             didScroll = false,
-            changeHeaderOn = 300;
+            changeHeaderOn = 50;
 
         function init() {
             window.addEventListener('scroll', function (event) {
                 if (!didScroll) {
                     didScroll = true;
-                    setTimeout(scrollPage, 250);
+                    scrollPage();
                 }
             }, false);
         }
