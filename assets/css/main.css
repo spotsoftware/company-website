@@ -605,7 +605,6 @@ hr {
     width: 90%;
     max-width: 69em;
     margin: 0 auto;
-    padding: 0 1.875em;
 }
 .cbp-af-header h1,
 .cbp-af-header nav {
@@ -619,10 +618,12 @@ hr {
     line-height: 230px;
 }
 .cbp-af-header h1 {
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     text-transform: uppercase;
-    color: orange;
-    letter-spacing: 4px;
-    font-size: 4em;
+    color: transparent;
     margin: 0;
     float: left;
 }
@@ -637,7 +638,6 @@ hr {
 }
 .cbp-af-header nav a:hover {
     color: #FFF;
-    
 }
 
 /* Transitions and class for reduced height */
@@ -674,7 +674,8 @@ hr {
     }
     .cbp-af-header h1,
     .cbp-af-header nav a {
-        line-height: 115px;
+        margin-top: 8px;
+        line-height: 80px;
     }
     .cbp-af-header nav a {
         margin: 0 10px;
