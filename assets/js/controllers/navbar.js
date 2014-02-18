@@ -5,19 +5,19 @@ angular.module('website')
             
         $scope.items = [{
             'title': 'Home',
-            'link': '/'
+            'link': 'index.html'
         }, {
             'title': 'Services',
-            'link': '/'
+            'link': 'services.html'
         }, {
             'title': 'Portfolio',
-            'link': '/'
+            'link': 'portfolio.html'
         }, {
             'title': 'About',
-            'link': '/'
+            'link': 'about.html'
         }, {
             'title': 'Contact',
-            'link': '/'
+            'link': '#contact'
         }];
         
         $scope.init = function () {

@@ -2,11 +2,7 @@
     <div class="cbp-af-inner">
         <h1>Spot Software</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About</a>
-            <a href="#contact">Contact</a>
+            <a ng-repeat="item in items" href="{{item.link}}">{{item.title}}</a>
         </nav>
     </div>
 </div>
