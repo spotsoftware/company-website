@@ -1,0 +1,11 @@
+<div class="cbp-af-header" ng-controller="NavbarCtrl">
+    <div class="cbp-af-inner">
+        <h1>Spot Software</h1>
+        <nav>
+            <a ng-repeat="item in items" ng-href="{{item.link}}" 
+               ng-class="{active: $parent.isActive(item.link)}" >
+                {{item.title}}
+            </a>
+        </nav>
+    </div>
+</div>
