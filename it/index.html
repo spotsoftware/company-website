@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="website">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -27,229 +27,38 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
-    <script src="../assets/js/modernizr.custom.js"></script>
-
+    <script src="../assets/js/libs/modernizr.custom.js"></script>
+    
 </head>
 
-<body>
-
+<body ng-app="website">
+    
     <!-- WEBSITE's NAVBAR -->
     <div ng-include="'partials/navbar.html'"></div>
-
-    <!-- MAIN IMAGE SECTION -->
-    <div id="headerwrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!--<h1>SPOT Software</h1>-->
-                    <h2>Progettiamo applicazioni web e sviluppiamo software personalizzato</h2>
-                    <div class="spacer"></div>
-                    <i class="fa fa-angle-down"></i>
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- /container -->
-    </div>
-    <!-- /headerwrap -->
-
-    <!-- WELCOME SECTION -->
-    <div class="container">
-        <div class="row mt">
-            <div class="col-lg-8">
-                <h1>Progettazione di applicazioni web e sviluppo di software personalizzato</h1>
-                <p>Siamo una software house, di soluzioni personalizzate. L'esperienza ci ha insegnato che la collaborazione con i nostri clienti ha un valore di crescita e soddisfazione se si basa sull'innovazione, sulla creatività e sulla competenza.</p>
-            </div>
-            <div class="col-lg-4">
-                <p class="pull-right">
-                    <br>
-                    <button type="button" class="btn btn-green">LEGGI TUTTO</button>
-                </p>
-            </div>
-        </div>
-        <!-- /row -->
-    </div>
-    <!-- /.container -->
-
-    <!-- SERVICES SECTION -->
-    <div id="services">
-        <div class="container">
-            <div class="row mt">
-                <div class="col-lg-1 centered">
-                    <i class="fa fa-certificate"></i>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Soluzioni personalizzate</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-
-                <div class="col-lg-1 centered">
-                    <i class="fa fa-question-circle"></i>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Web</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-
-
-                <div class="col-lg-1 centered">
-                    <i class="fa fa-globe"></i>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Mobile</h3>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                </div>
-
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </div>
-    <!-- services section -->
-
-
-
-    <!-- PORTFOLIO SECTION -->
-    <div id="portfolio">
-        <div class="container" <div class="row mt">
-            <ul class="grid effect-2" id="grid">
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/15.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/3.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/4.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/12.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/13.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/10.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/9.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/2.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/14.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/5.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/6.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/7.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/6.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/9.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="singleproject.html">
-                        <img src="../assets/img/portfolio/11.png">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- row -->
-    </div>
-    <!-- container -->
-    </div>
-    <!-- portfolio -->
-
-
-    <!-- CLIENTS LOGOS -->
-    <div id="lg">
-        <div class="container">
-            <div class="row centered">
-                <div class="col-lg-2 col-lg-offset-1">
-                    <img src="../assets/img/clients/c01.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="../assets/img/clients/c02.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="../assets/img/clients/c03.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="../assets/img/clients/c04.gif" alt="">
-                </div>
-                <div class="col-lg-2">
-                    <img src="../assets/img/clients/c05.gif" alt="">
-                </div>
-            </div>
-            <!-- row -->
-        </div>
-        <!-- container -->
-    </div>
-    <!-- dg -->
-    <!-- container -->
-
+    
+    <div ng-view=""></div>
+    
     <div ng-include="'partials/social.html'"></div>
 
     <div ng-include="'partials/footer.html'"></div>
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/masonry.pkgd.min.js"></script>
-    <script src="../assets/js/imagesloaded.js"></script>
-    <script src="../assets/js/classie.js"></script>
-    <script src="../assets/js/AnimOnScroll.js"></script>
+    <script src="../assets/js/libs/bootstrap.min.js"></script>
+    <script src="../assets/js/libs/masonry.pkgd.min.js"></script>
+    <script src="../assets/js/libs/imagesloaded.js"></script>
+    <script src="../assets/js/libs/classie.js"></script>
+    <script src="../assets/js/libs/AnimOnScroll.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="../assets/js/website.js"></script>
+    <script src="../assets/js/controllers/main.js"></script>
+    <script src="../assets/js/controllers/portfolio.js"></script>
+    <script src="../assets/js/controllers/services.js"></script>
+    <script src="../assets/js/controllers/about.js"></script>
     <script src="../assets/js/controllers/navbar.js"></script>
-
-    <script>
-        new AnimOnScroll(document.getElementById('grid'), {
-            minDuration: 0.4,
-            maxDuration: 0.7,
-            viewportFactor: 0.2
-        });
-    </script>
 </body>
 
 </html>

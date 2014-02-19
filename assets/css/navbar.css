@@ -54,6 +54,12 @@
     text-decoration:none;
 }
 
+.cbp-af-header nav a.active {
+    color: #FFF;
+    font-weight: 400;
+}
+        
+
 .cbp-af-header nav a:hover {
     color: #FFF;
 }

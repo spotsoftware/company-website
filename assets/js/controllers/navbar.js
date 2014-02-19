@@ -5,20 +5,35 @@ angular.module('website')
             
         $scope.items = [{
             'title': 'Home',
-            'link': 'index.html'
+            'link': '/'
         }, {
             'title': 'Services',
-            'link': 'services.html'
+            'link': '/services'
         }, {
             'title': 'Portfolio',
-            'link': 'portfolio.html'
+            'link': '/portfolio'
         }, {
             'title': 'About',
-            'link': 'about.html'
+            'link': '/about'
         }, {
             'title': 'Contact',
             'link': '#contact'
         }];
+        
+        $scope.isActive = function (route) {
+            return route === $location.path();
+        };
+        
+//        $scope.fixHashedUrls = function () {
+//            setTimeout(function () {
+//                $('.cbp-af-header').find('a').each(function (index){
+//                    var hasHashedUrl = this.href.indexOf('#') > -1;
+//                    if(hasHashedUrl) {
+//                        this.setAttribute('target', '_self');
+//                    }
+//                });
+//            }, 200);
+//        };
         
         $scope.init = function () {
             var cbpAnimatedHeader = (function () {
@@ -57,4 +72,5 @@ angular.module('website')
         };
         
         $scope.init();
+//        $scope.fixHashedUrls();
     });
