@@ -67,8 +67,8 @@ hr {
 }
 .btn-green {
     color: #fff;
-    background-color: #005acb;
-    border-color: #005acb;
+    background-color: #003366;
+    border-color: #003366;
     font-weight: 300;
 }
 .btn-green: hover, .btn-green: focus, .btn-green: active, .btn-green.active, .open .dropdown-toggle.btn-green {
@@ -112,7 +112,7 @@ hr {
     margin-top: 20px;
 }
 .menu h1.logo a: hover {
-    color: #005acb;
+    color: #003366;
 }
 .menu img.logo {
     margin: 20px 0;
@@ -364,7 +364,7 @@ hr {
     width: 100%
 }
 #services {
-    background: #005acb;
+    background: #003366;
     margin-top: 25px;
     padding-top: 35px;
     padding-bottom: 35px;
@@ -413,7 +413,7 @@ hr {
     padding: 15px;
 }
 #sf .lg {
-    background-color: #005acb;
+    background-color: #003366;
 }
 #sf .dg {
     background-color: #002c6a;
