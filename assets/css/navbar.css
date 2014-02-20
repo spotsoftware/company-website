@@ -41,6 +41,7 @@
     color: transparent;
     margin: 0;
     float: left;
+    opacity: 0.3;
 }
 
 .cbp-af-header nav {
@@ -50,8 +51,9 @@
 .cbp-af-header nav a {
     color: orange;
     margin: 0 0 0 20px;
-    font-size: 1.4em;
+    font-size: 1em;
     text-decoration:none;
+    text-transform: uppercase;
 }
 
 .cbp-af-header nav a.active {
@@ -74,17 +76,18 @@
 }
 
 .cbp-af-header.cbp-af-header-shrink {
-    height: 90px;
-    background: #002c6a;
+    height: 80px;
+    background: rgba(0, 51, 102, .8);
 }
 
 .cbp-af-header.cbp-af-header-shrink h1,
 .cbp-af-header.cbp-af-header-shrink nav a {
-    line-height: 90px;
+    line-height: 80px;
+    opacity: 1;
 }
 
 .cbp-af-header.cbp-af-header-shrink h1 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 /* Example Media Queries */
