@@ -7,16 +7,13 @@ angular.module('website')
             'title': 'Home',
             'link': '/'
         }, {
-            'title': 'Services',
+            'title': 'Soluzioni',
             'link': '/services'
         }, {
-            'title': 'Portfolio',
-            'link': '/portfolio'
-        }, {
-            'title': 'About',
+            'title': 'Chi Siamo',
             'link': '/about'
         }, {
-            'title': 'Contact',
+            'title': 'Contatti',
             'link': '#contact'
         }];
         
