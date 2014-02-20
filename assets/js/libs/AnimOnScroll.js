@@ -83,7 +83,8 @@
 			// The viewportFactor defines how much of the appearing item has to be visible in order to trigger the animation
 			// if we'd use a value of 0, this would mean that it would add the animation class as soon as the item is in the viewport. 
 			// If we were to use the value of 1, the animation would only be triggered when we see all of the item in the viewport (100% of it)
-			viewportFactor : 0
+			viewportFactor : 0,
+            wait: 0
 		},
 		_init : function() {
 			this.items = Array.prototype.slice.call( document.querySelectorAll( '#' + this.el.id + ' > li' ) );
@@ -93,33 +94,35 @@
 
 			var self = this;
 
-			imagesLoaded( this.el, function() {
-				
-				// initialize masonry
-				new Masonry( self.el, {
-					itemSelector: 'li',
-					transitionDuration : 0
-				} );
-				
-				if( Modernizr.cssanimations ) {
-					// the items already shown...
-					self.items.forEach( function( el, i ) {
-						if( inViewport( el ) ) {
-							self._checkTotalRendered();
-							classie.add( el, 'shown' );
-						}
-					} );
+			setTimeout(function () {
+                imagesLoaded( self.el, function() {
 
-					// animate on scroll the items inside the viewport
-					window.addEventListener( 'scroll', function() {
-						self._onScrollFn();
-					}, false );
-					window.addEventListener( 'resize', function() {
-						self._resizeHandler();
-					}, false );
-				}
+                    // initialize masonry
+                    new Masonry( self.el, {
+                        itemSelector: 'li',
+                        transitionDuration : 0
+                    } );
 
-			});
+                    if( Modernizr.cssanimations ) {
+                        // the items already shown...
+                        self.items.forEach( function( el, i ) {
+                            if( inViewport( el ) ) {
+                                self._checkTotalRendered();
+                                classie.add( el, 'shown' );
+                            }
+                        } );
+
+                        // animate on scroll the items inside the viewport
+                        window.addEventListener( 'scroll', function() {
+                            self._onScrollFn();
+                        }, false );
+                        window.addEventListener( 'resize', function() {
+                            self._resizeHandler();
+                        }, false );
+                    }
+
+                });
+            }, 200);
 		},
 		_onScrollFn : function() {
 			var self = this;

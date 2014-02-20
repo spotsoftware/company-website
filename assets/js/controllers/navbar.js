@@ -1,21 +1,36 @@
 'use strict'
 
 angular.module('website')
-    .controller('NavbarCtrl', function ($scope, $location) {
+    .controller('NavbarCtrl', function ($scope, $location, $anchorScroll) {
             
         $scope.items = [{
             'title': 'Home',
-            'link': '/'
+            'link': '/main' //'!#/main'
         }, {
             'title': 'Soluzioni',
             'link': '/services'
         }, {
             'title': 'Chi Siamo',
             'link': '/about'
-        }, {
-            'title': 'Contatti',
-            'link': '#contact'
         }];
+        
+        $scope.anchors = [{
+            'title': 'Contatti',
+            'hash': 'contact'
+        }];
+        
+        $scope.anchorScroll = function (hash){
+          // set the location.hash to the id of
+          // the element you wish to scroll to.
+          $location.hash(hash);
+
+          // call $anchorScroll()
+          $anchorScroll();
+        };
+        
+        $scope.isShrinked = function () {
+            return $location.path() !== '/';
+        };
         
         $scope.isActive = function (route) {
             return route === $location.path();
@@ -50,11 +65,13 @@ angular.module('website')
                 };
 
                 function scrollPage() {
-                    var sy = scrollY();
-                    if (sy >= changeHeaderOn) {
-                        classie.add(header, 'cbp-af-header-shrink');
-                    } else {
-                        classie.remove(header, 'cbp-af-header-shrink');
+                    if($location.path() === '/'){
+                        var sy = scrollY();
+                        if (sy >= changeHeaderOn) {
+                            classie.add(header, 'cbp-af-header-shrink');
+                        } else {
+                            classie.remove(header, 'cbp-af-header-shrink');
+                        }
                     }
                     didScroll = false;
                 };
