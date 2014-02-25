@@ -1,30 +1,23 @@
-'use strict';
-
-angular.module('website', [])
-.config(function ($routeProvider, $locationProvider) {
+var website = angular.module('website', [
+  'ngRoute'
+]);
+ 
+website.config(['$routeProvider',
+  function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '../../it/partials/main.html',
+            templateUrl: 'partials/main.html',
             controller: 'MainCtrl'
         })
         .when('/services', {
-            templateUrl: '../../it/partials/services.html',
+            templateUrl: 'partials/services.html',
             controller: 'ServicesCtrl'
         })
-        .when('/portfolio', {
-            templateUrl: '../../it/partials/portfolio.html',
-            controller: 'PortfolioCtrl'
-        })
         .when('/about', {
-            templateUrl: '../../it/partials/about.html',
+            templateUrl: 'partials/about.html',
             controller: 'AboutCtrl'
-        })
-        .when('#contact', {
-            //need to be fixed
         })
         .otherwise({
             redirectTo: '/'
         });
-    
-    $locationProvider.html5Mode(true);
-});
+  }]);
