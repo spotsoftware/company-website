@@ -609,6 +609,31 @@ hr {
     -moz-animation: moveUp .65s ease forwards;
     animation: moveUp .65s ease forwards;
 }
+.grid li p {
+    position: absolute;
+    bottom: 8px;
+    margin: 0;
+    padding: 5px 8px;
+    width: calc(100% - 14px);
+    line-height: 17px;
+    font-size: 13px;
+    color: white;
+    background: grey;
+    display: none;
+}
+.grid li.animate p {
+    display: block;
+}
+.grid .fading-text {
+    transition: opacity 0.5s linear;
+    transform:translate(9999px);
+    opacity: 0;
+}
+.grid a:hover .fading-text {
+    transition: opacity 0.5s linear;
+    transform:translate(0);
+    opacity: 0.5;
+}
 @-webkit-keyframes moveUp {
     to {
         -webkit-transform: translateY(0);
