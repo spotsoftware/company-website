@@ -31,6 +31,10 @@
     line-height: 210px;
 }
 
+.cbp-af-header nav a {
+    cursor: pointer;
+}
+
 .cbp-af-header h1 {
     background-image: url(../img/logo.png);
     background-position: center;
