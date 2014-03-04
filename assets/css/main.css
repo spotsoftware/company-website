@@ -621,7 +621,8 @@ hr {
     background: grey;
     display: none;
 }
-.grid li.animate p {
+.grid li.animate p,
+.grid li.shown pW{
     display: block;
 }
 .grid .fading-text {
