@@ -3,7 +3,8 @@
         <h1>Spot Software</h1>
         <nav>
             <a ng-repeat="item in items" ng-href="{{item.link}}" 
-               ng-class="{active: $parent.isActive(item.link)}" >
+               ng-class="{active: $parent.isActive(item.link)}"
+               ng-click="$parent.scrollTop()">
                 {{item.title}}
             </a>
             

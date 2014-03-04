@@ -19,13 +19,18 @@ angular.module('website')
             'hash': 'contact'
         }];
         
-        $scope.anchorScroll = function (hash){
-          // set the location.hash to the id of
-          // the element you wish to scroll to.
-          $location.hash(hash);
+        $scope.scrollTop = function () {
+            // set the location.hash to the id of
+            // the element you wish to scroll to.
+            $location.hash("#top");
 
-          // call $anchorScroll()
-          $anchorScroll();
+            // call $anchorScroll()
+            $anchorScroll();
+        };
+        
+        $scope.anchorScroll = function (hash){
+            //cannot use anchorScroll because of AnimOnScroll plugin
+            $(window).scrollTo("#" + hash);
         };
         
         $scope.isShrinked = function () {
