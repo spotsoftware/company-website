@@ -630,10 +630,10 @@ hr {
     transform:translate(9999px);
     opacity: 0;
 }
-.grid a:hover .fading-text {
+.grid li:hover .fading-text {
     transition: opacity 0.5s linear;
     transform:translate(0);
-    opacity: 0.5;
+    opacity: 0.9;
 }
 @-webkit-keyframes moveUp {
     to {
