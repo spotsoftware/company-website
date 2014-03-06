@@ -250,6 +250,12 @@ hr {
     font-weight: 700;
     letter-spacing: 3px;
 }
+
+#headerwrap .claim  {
+    font-weight: normal;
+    font-size: 7em;
+}
+
 #headerwrap h2 {
     color: #fff;
     font-size: 50px;
