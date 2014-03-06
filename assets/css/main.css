@@ -402,7 +402,6 @@ hr {
 #services i {
     color: #fff;
     font-size: 35px;
-    margin-top: 22px;
 }
 #lg {
     background: #ebebeb;
@@ -410,6 +409,11 @@ hr {
     padding-bottom: 50px;
     text-align: center;
 }
+
+#lg h2 {
+    margin: 0 0 30px;
+}
+
 #lg .desc {
     text-align: left;
 }
@@ -475,8 +479,8 @@ hr {
     font-size: 70px;
     color: #fff;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #cf {
     background: #2f2f2f;
