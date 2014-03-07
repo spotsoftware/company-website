@@ -256,6 +256,12 @@ hr {
     font-size: 7em;
 }
 
+@media (max-width: 640px){ 
+    #headerwrap .claim  {
+        font-size:5em;
+    }
+}
+
 #headerwrap h2 {
     color: #fff;
     font-size: 50px;
